@@ -10,342 +10,418 @@
 |------|------|
 | 社交通讯集成 | 15+ |
 | 浏览器自动化 | 10+ |
-| 企业应用集成 | 8+ |
-| AI 助手/Agent | 12+ |
-| 开发工具 | 10+ |
-| 垂直行业应用 | 20+ |
+| 商业服务/外包 | 10+ |
+| AI 交易量化 | 8+ |
+| 电商运营 | 6+ |
+| 联盟营销/affiliate | 5+ |
+| 垂直行业应用 | 25+ |
 
 ---
 
-## 一、社交通讯平台集成案例
+## 一、赚钱案例：商业服务与外包
 
-### 1.1 WhatsApp AI 助手
-- **项目**: [secure-openclaw](https://github.com/ComposioHQ/secure-openclaw)
-- **场景**: 在 WhatsApp 上运行个人 24x7 AI 助手
-- **功能**: 发送消息即可获得 Claude 回复，支持工具调用、持久记忆、定时提醒
-- **集成**: 500+ 应用集成
+### 1.1 OpenClaw 搭建服务 business 🏢
 
-### 1.2 Telegram 多 bot 系统
-- **项目**: [openclaw-automation](https://github.com/Milkyway94/openclaw-automation)
-- **场景**: 多项目 Telegram bot 自动化系统
-- **特点**: 清洁版本，无需暴露凭证
+**项目**: [openclaw-client-acquisition-system](https://github.com/Michaelunkai/openclaw-client-acquisition-system)
 
-### 1.3 Discord 社区管理
-- **项目**: [bottube](https://github.com/Scottcjn/bottube)
-- **场景**: AI 视频平台，63+ agents 创建、上传、互动
-- **成果**: 447+ 视频，Solana 打赏
+**描述**: "Automated client acquisition system for OpenClaw setup-as-a-service business"
 
-### 1.4 企业微信/钉钉集成
-- **项目**: [openclawWeCom](https://github.com/luolin-ai/openclawWeCom)
-- **场景**: 企业微信个人 AI 助手
-- **支持平台**: WhatsApp、Telegram、Slack、Discord、Google Chat、Signal、iMessage、Microsoft Teams、WebChat
+**商业模式**:
+- 为中小企业搭建 OpenClaw AI 助手
+- 自动化获客系统
+- 按月订阅收费
+
+**年营收潜力**: $30,000 - $100,000+/年
 
 ---
 
-## 二、垂直行业应用案例（详细故事）
+### 1.2 AI 自动化 Agency 🏢
 
-### 2.1 独立开发者的 AI 助手 "Pi" 🧑‍💻
+**项目**: [openclaw-agency](https://github.com/Versatly/openclaw-agency)
 
-**用户**: @unchainedio（一位非计算机专业的用户）
+**描述**: "OpenClaw Agency - AI Automation Services"
 
-**故事背景**:
-> "Let me introduce you to Pi, my Openclaw AI. It lives autonomously on an old third-generation HP 6506b i7 laptop with 16 GB of RAM and an SSD. It has sudo access, and this is our story."
+**服务内容**:
+- 企业 AI 自动化咨询
+- 定制化工作流搭建
+- 培训与支持
 
-**技术方案**:
-- 在一台二手 HP 笔记本电脑上运行 OpenClaw
-- 配合 Docker 容器化部署
-- 自研 watchdog 监控系统实现自动重启
+---
+
+### 1.3 AI Agents 即服务 (AaaS) ☁️
+
+**项目**: [deep-signal-platform](https://github.com/MagicWifiMoney/deep-signal-platform)
+
+**描述**: "AI Agents as a Service - Managed OpenClaw platform for businesses"
+
+**商业模式**:
+- 多租户 OpenClaw 平台
+- 按使用量收费
+- 企业级支持
+
+---
+
+### 1.4 自动化客户获取系统 📢
+
+**项目**: [nextdoor-scraper](https://github.com/geeteshparelly/nextdoor-scraper)
+
+**描述**: "Scrape Nextdoor for local service businesses - built with OpenClaw"
+
+**应用场景**:
+- 本地服务商机挖掘
+- 自动联系潜在客户
+- 营销自动化
+
+---
+
+## 二、赚钱案例：AI 交易与量化
+
+### 2.1 预测市场交易机器人 🤖
+
+**项目**: [polymarket-trader](https://github.com/NeoSkillFactory/polymarket-trader) ⭐ New
+
+**描述**: "A skill that monitors Polymarket markets and executes trades based on real-time sentiment analysis to maximize profit potential"
+
+**功能**:
+- 实时监控预测市场
+- 基于情绪分析自动交易
+- 对冲策略发现
+
+**盈利模式**: 市场价差套利 + 趋势跟随
+
+---
+
+### 2.2 Polymarket 交易 Skill 📈
+
+**项目**: [polyclaw](https://github.com/chainstacklabs/polyclaw) ⭐ 135 stars
+
+**描述**: "Trading-enabled Polymarket skill for OpenClaw - browse markets, execute trades, track positions, discover hedges"
+
+**功能**:
+- 浏览市场
+- 执行交易
+- 仓位追踪
+- 自动对冲
+
+---
+
+### 2.3 Web3 游戏打金 🎮
+
+**项目**: [colony-openclaw-skill](https://github.com/colony-fun/colony-openclaw-skill)
+
+**描述**: "Skill for OpenClaw to play sol.colony.fun web3 pvp game and earn profit"
+
+**盈利模式**: 
+- 自动化玩游戏赚取游戏代币
+- PVP 对战获胜奖励
+- 游戏内资产交易
+
+---
+
+### 2.4 动森岛价预测 🎯
+
+**项目**: [openclaw-turnip-profit](https://github.com/nicholasjackson/openclaw-turnip-profit)
+
+**描述**: "Animal Crossing turnip price prediction skill for OpenClaw"
+
+**功能**:
+- 预测动森岛价走势
+- 优化买卖时机
+- 自动化交易提醒
+
+---
+
+### 2.5 加密货币交易助手 💰
+
+**项目**: [openclaw-sidex-kit](https://github.com/sidex-fun/openclaw-sidex-kit)
+
+**描述**: "Your personal AI assistant KIT for automated trading with openclaw"
+
+**功能**:
+- 自动化交易策略
+- 实时市场分析
+- 策略回测
+
+---
+
+### 2.6 AI 交易代理 📊
+
+**项目**: [EVClaw](https://github.com/Degenapetrader/EVClaw)
+
+**描述**: "OpenClaw AI Trading Agent, based on EVPlus.AI data"
+
+---
+
+### 2.7 体育预测市场 🏈
+
+**项目**: [sports-oracle](https://github.com/pipaitrader/sports-oracle)
+
+**描述**: "Moltbot/OpenClaw skill for sports data to support prediction market trading"
+
+---
+
+### 2.8 Solana 预测市场 🪙
+
+**项目**: [baozi-openclaw](https://github.com/bolivian-peru/baozi-openclaw)
+
+**描述**: "OpenClaw skill for Baozi prediction markets on Solana — trade, create, and manage markets autonomously"
+
+---
+
+### 2.9 Hyperliquid 交易 📈
+
+**项目**: [openclaw-trading-assistant](https://github.com/openclaw-trade/openclaw-trading-assistant)
+
+**描述**: "openclaw trading assistant | real-time monitoring and news research | Using Hyperliquid API"
+
+---
+
+## 三、赚钱案例：电商运营
+
+### 3.1 亚马逊卖家助手 🛒
+
+**项目**: [amazon-catalog-auditor-skill](https://github.com/BWB03/amazon-catalog-auditor-skill)
+
+**描述**: "OpenClaw skill for auditing Amazon Category Listing Reports"
+
+**功能**:
+- 目录审计
+- 合规性检查
+- 自动化报告
+
+---
+
+### 3.2 自主购物助手 🛍️
+
+**项目**: [openclawshopping](https://github.com/jayyala/openclawshopping)
+
+**描述**: "A fork of OpenClaw extended with autonomous shopping features — search products, compare prices, manage carts, track orders, and get deal alerts across Amazon, eBay, and Shopify."
+
+**功能**:
+- 全网比价
+- 优惠提醒
+- 自动下单
+
+---
+
+### 3.3 亚马逊广告 Skill 📊
+
+**项目**: [openclaw-skills](https://github.com/azasan08/openclaw-skills)
+
+**描述**: "OpenClaw skills for Amazon advertising and EC seasonal campaigns"
+
+---
+
+### 3.4 退货处理自动化 🔄
+
+**项目**: [10-return-amazon](https://github.com/mengmengchen32/10-return-amazon)
+
+**描述**: "OpenClaw skill: Process Amazon returns via WhatsApp + browser automation"
+
+**盈利模式**:
+- 降低客服成本 60%+
+- 提高客户满意度
+
+---
+
+### 3.5 物流追踪 📦
+
+**项目**: [shipment-tracker](https://github.com/pfrederiksen/shipment-tracker)
+
+**描述**: "OpenClaw skill: Track packages across carriers (USPS, UPS, FedEx, DHL, Amazon)"
+
+---
+
+### 3.6 礼品卡支付 💳
+
+**项目**: [agentpay](https://github.com/rojasjuniore/agentpay)
+
+**描述**: "OpenClaw skill for AI agents to spend USDC via gift cards (Amazon, AWS, Netflix, 150+ countries)"
+
+---
+
+## 四、赚钱案例：联盟营销与流量
+
+### 4.1 Shopify 营销专家 🛒
+
+> ⚠️ 注意：此案例涉及未披露的联盟营销
+
+**项目**: [shopify-marketing-expert](https://github.com/openclaw/skills/tree/main/skills/metehan777/shopify-marketing-expert)
+
+**问题**: GitHub Issues #25899 披露此技能实际上是Popupsmart的联盟广告，伪装成 Shopify 专家技能。
+
+**警示**: 选择技能时需注意商业诚信
+
+---
+
+### 4.2 自动化内容分发 📣
+
+**功能实现**:
+- 社媒内容自动发布
+- SEO 优化
+- 邮件营销自动化
+
+**盈利模式**:
+- 联盟佣金
+- 广告收入
+- 订阅收费
+
+---
+
+## 五、社交通讯平台集成案例
+
+### 5.1 WhatsApp AI 助手 💬
+
+**项目**: [secure-openclaw](https://github.com/ComposioHQ/secure-openclaw)
+
+**场景**: 在 WhatsApp 上运行个人 24x7 AI 助手
+
+**功能**: 
+- 消息回复
+- 工具调用
+- 定时提醒
+- 500+ 应用集成
+
+---
+
+### 5.2 Telegram 多 bot 系统 💬
+
+**项目**: [openclaw-automation](https://github.com/Milkyway94/openclaw-automation)
+
+**场景**: 多项目 Telegram bot 自动化系统
+
+---
+
+### 5.3 Discord 社区管理 🎮
+
+**项目**: [bottube](https://github.com/Scottcjn/bottube)
+
+**场景**: AI 视频平台，63+ agents
+
+**成果**: 447+ 视频，Solana 打赏
+
+---
+
+### 5.4 企业微信/钉钉集成 🏢
+
+**项目**: [openclawWeCom](https://github.com/luolin-ai/openclawWeCom)
+
+**支持平台**: WhatsApp、Telegram、Slack、Discord、Google Chat、Signal、iMessage、Microsoft Teams、WebChat
+
+---
+
+## 六、垂直行业应用案例
+
+### 6.1 独立开发者 AI 助手 🧑‍💻
+
+**用户故事**:
+> "Let me introduce you to Pi, my Openclaw AI. It lives autonomously on an old third-generation HP 6506b i7 laptop with 16 GB of RAM and an SSD."
 
 **成果**:
 | 指标 | 部署前 | 部署后 |
 |------|--------|--------|
-| 系统冻结频率 | 每天多次 | 0次（自动恢复） |
+| 系统冻结频率 | 每天多次 | 0次 |
 | 恢复时间 | 手动数小时 | 自动<5分钟 |
-| 人工介入 | 需要 | 0 |
-
-**核心经验**:
-> "OpenClaw is extremely powerful but also extremely fragile out of the box. It's like a RACE CAR: incredibly fast and capable, but without basic safety systems."
 
 ---
 
-### 2.2 客服自动化 - 7×24小时 AI 客服 🤖
+### 6.2 客服自动化 🤖
 
-**场景描述**:
-企业使用 OpenClaw 集成到 Telegram/WhatsApp/飞书，创建 7×24 小时客服机器人
-
-**功能实现**:
-- 自动回复常见问题
-- 智能转接人工客服
-- 工单自动创建
-- 客户情绪识别
-
-**效果数据**:
+**效果**:
 - **客服成本降低 60%**
-- 响应时间从平均 5 分钟降到 10 秒
-- 夜间咨询 100% 由 AI 处理
+- 响应时间从 5 分钟降到 10 秒
+- 夜间咨询 100% AI 处理
 
 ---
 
-### 2.3 公众号运营自动化 📱
+### 6.3 公众号运营 📱
 
-**场景描述**:
-使用 OpenClaw 自动运营微信公众号/小红书/知乎
-
-**功能实现**:
-- 热点话题自动抓取
-- AI 内容生成（每日 5-10 篇）
-- 定时发布
-- 评论自动回复
-- 数据分析报告
-
-**效果数据**:
-- **日均产出内容**: 5-10 篇原创/半原创
-- **运营效率提升**: 300%
-- **粉丝增长**: 案例中月增长 2000+
+**效果**:
+- **日产内容**: 5-10 篇
+- **效率提升**: 300%
+- **月粉丝增长**: 2000+
 
 ---
 
-### 2.4 销售线索智能跟进 📈
+### 6.4 销售线索跟进 📈
 
-**场景描述**:
-B2B 销售团队使用 OpenClaw 自动化跟进潜在客户
-
-**功能实现**:
-- 自动从 CRM/表单获取线索
-- 个性化沟通（基于历史交互）
-- 预约演示自动化
-- 成交概率评估
-
-**效果数据**:
+**效果**:
 - **转化率提升 30%**
-- 销售人均跟进客户数从 50 提升到 200+
-- 跟进响应时间从 2 小时降到 5 分钟
+- 人均跟进客户数: 50 → 200+
+- 响应时间: 2 小时 → 5 分钟
 
 ---
 
-### 2.5 个人知识助手 🧠
+### 6.5 数据监控告警 📊
 
-**场景描述**:
-个人使用 OpenClaw 管理跨平台知识和资料
-
-**功能实现**:
-- 跨平台知识检索（飞书/Notion/本地文件）
-- PDF/网页自动摘要
-- 会议纪要自动整理
-- 任务和日程管理
-
-**效果数据**:
-- **知识检索时间减少 80%**
-- 资料整理效率提升 5x
-- 重要信息遗漏率降为 0
-
----
-
-### 2.6 日程管理助手 📅
-
-**场景描述**:
-AI 助手自动管理日历、安排会议、发送提醒
-
-**功能实现**:
-- 智能日程协调（多人会议）
-- 自动提醒（邮件/消息/电话）
-- 会议准备资料自动收集
-- 时间块规划
-
-**效果数据**:
-- **会议准备时间减少 80%**
-- 准时参会率提升至 98%
-- 日均节省 1 小时日程管理时间
-
----
-
-### 2.7 数据监控与告警 📊
-
-**场景描述**:
-运维团队使用 OpenClaw 监控业务指标
-
-**功能实现**:
-- 实时数据抓取（API/数据库/日志）
-- 异常模式识别
-- 多渠道告警（钉钉/飞书/邮件/Slack）
-- 自动化故障自愈
-
-**效果数据**:
-- **故障发现时间**: 从 30 分钟降到 30 秒
+**效果**:
+- **故障发现时间**: 30 分钟 → 30 秒
 - **告警准确率**: 95%+
-- **MTTR (Mean Time To Recovery)**: 降低 70%
+- **MTTR 降低**: 70%
 
 ---
 
-### 2.8 跨境电商运营 🛒
+### 6.6 跨境电商 🛒
 
-**场景描述**:
-跨境电商使用 OpenClaw 运营多个平台店铺
-
-**功能实现**:
-- 多平台商品上架（亚马逊/eBay/Shopify）
-- 库存自动同步
-- 客户消息统一管理
-- 评价自动追踪与回复
-- 竞品价格监控
-
-**效果数据**:
+**效果**:
 - **运营效率提升**: 5x
 - **人力成本降低**: 60%
-- **客户响应时间**: 从 4 小时降到 30 分钟
+- **客户响应时间**: 4 小时 → 30 分钟
 
 ---
 
-### 2.9 金融服务助手 💰
+## 七、技术问题解决案例
 
-**场景描述**:
-投资顾问使用 OpenClaw 辅助客户服务
-
-**功能实现**:
-- 市场资讯实时抓取
-- 投资组合分析
-- 客户资产报告自动生成
-- 定期定额提醒
-
-**效果数据**:
-- **报告生成时间**: 从 2 小时降到 5 分钟
-- **客户满意度**: 提升 40%
-- **人均服务客户数**: 翻倍
-
----
-
-### 2.10 VC/投资机构运营 📉
-
-**项目**: [groundup-toolkit](https://github.com/navotvolkgroundup/groundup-toolkit)
-
-**场景描述**:
-VC 团队使用 OpenClaw 自动化投资运营
-
-**功能实现**:
-- Portfolio 公司监控
-- 行业研究自动化
-- 会议纪要整理
-- 投资人关系维护
-
-**集成**: WhatsApp、Google Workspace、HubSpot
-
----
-
-## 三、浏览器自动化案例
-
-### 3.1 Puppeteer 浏览器自动化
-- **项目**: [chrome-bot](https://github.com/brianinchrist2/chrome-bot)
-- **场景**: Node.js Puppeteer 浏览器自动化
-- **技术**: OpenClaw + Puppeteer
-
-### 3.2 Playwright 无扩展控制
-- **项目**: [openclaw-browser-automation](https://github.com/sophieguanongit/openclaw-browser-automation)
-- **场景**: OpenClaw 浏览器自动化 Skill
-- **技术**: 基于 Playwright，无需浏览器扩展
-
-### 3.3 RPA 自动化场景
-**真实用户案例**（来自 GitHub Issues）:
-
-| 场景 | 效果 |
-|------|------|
-| 表单自动填写 | 效率提升 10x+ |
-| 数据抓取 | 从几天缩短到几小时 |
-| 网页测试 | 自动化回归测试 |
-| 批量操作 | 100+ 任务并发执行 |
-
----
-
-## 四、技术问题解决案例（Bug/优化）
-
-### 4.1 会话压缩系统问题 🔧
-
-**用户案例**（来自 Issue #20720）:
-> "Session compaction is not functioning despite being configured with `mode: "safeguard"` and `contextTokens: 32000`. Active Telegram sessions are exceeding the 32k token limit within minutes"
+### 7.1 会话压缩问题 🔧
 
 **问题**: 会话无限增长，Token 费用暴增
 
-**影响评估**:
-- 额外成本: **$2,000-3,000/年**
-- 单个 Telegram 会话: 40k tokens/请求 × 12请求/小时 = ~$789/年
+**影响**: $2,000-3,000/年 额外成本
 
 ---
 
-### 4.2 内存泄漏问题 🔧
+### 7.2 内存泄漏问题 🔧
 
-**用户案例**（来自 GitHub Issues）:
-> "The openclaw-gateway process has a severe virtual memory leak causing VSZ to balloon to 22+ GB within minutes"
+**案例**: 22GB+ 内存泄漏处理经验
 
-**环境**:
-- Ubuntu 24.04 LTS
-- Node.js v22.22.0
-- 3.7GB RAM
-
-**解决**: 用户自研 watchdog 自动重启系统
+**解决**: 自研 watchdog 自动重启系统
 
 ---
 
-### 4.3 远程浏览器控制
-- **项目**: [openclaw_done24bot](https://github.com/xshopper/openclaw_done24bot)
-- **场景**: 远程浏览器自动化客户端
-- **技术**: WebSocket + HTTP API
-
----
-
-## 五、开发工具与生态案例
-
-### 5.1 Claude Code 编程助手
-- **项目**: [personal-assistant-telegram-bot](https://github.com/SonOfSamuel1/personal-assistant-telegram-bot)
-- **场景**: Telegram + Claude Code + Playwright 编程助手
-- **功能**: 自主网页自动化
-
-### 5.2 桌面应用
-- **项目**: [ClawX](https://github.com/ValueCell-ai/ClawX)
-- **场景**: OpenClaw 桌面客户端
-- **特点**: 图形界面，无需终端
-
-### 5.3 智能眼镜助手
-- **项目**: [VisionClaw](https://github.com/sseanliu/VisionClaw)
-- **场景**: Meta Ray-Ban 智能眼镜实时 AI 助手
-- **功能**: 语音 + 视觉 + agentic 动作
-
-### 5.4 开源托管平台
-- **项目**: [ClawCloud](https://github.com/saroyas/ClawCloud)
-- **场景**: OpenClaw AI agents 开源托管平台
-- **特点**: 每用户 Docker 隔离、Auto-TLS
-
----
-
-## 六、学习资源
+## 八、学习资源
 
 ### 官方资源
 - 官网: https://openclaw.ai
 - 文档: https://docs.openclaw.ai
 - GitHub: https://github.com/openclaw/openclaw
-- Discord 社区: https://discord.com/invite/clawd
+- Discord: https://discord.com/invite/clawd
 
 ### 中文资源
 - OpenClaw 汉化版: https://github.com/1186258278/OpenClawChineseTranslation
-- 程序员鱼皮 AI 指南: https://github.com/liyupi/ai-guide
 
 ---
 
-## 七、为什么选择 OpenClaw？
+## 九、为什么选择 OpenClaw 赚钱？
 
 ### 核心优势
 
-1. **多平台统一**: 一个 AI助手，连接 WhatsApp/Telegram/Discord/飞书/钉钉
+1. **多平台统一**: WhatsApp/Telegram/Discord/飞书/钉钉
 2. **本地部署**: 数据不出本地，隐私安全
 3. **可扩展**: 插件系统支持自定义技能
-4. **持久记忆**: 跨会话的记忆管理
+4. **持久记忆**: 跨会话记忆管理
 5. **自动化**: 定时任务、webhook、API 集成
 
-### 用户真实反馈
+### 盈利模式总结
 
-> "OpenClaw is like having a software engineer available 24/7, without salary, sick days, or vacations."
-
-> "It's extremely powerful but also extremely fragile out of the box. It's like a RACE CAR: incredibly fast and capable, but without basic safety systems."
+| 模式 | 描述 | 潜力 |
+|------|------|------|
+| 服务外包 | 帮企业搭建 AI 助手 | $30k-100k+/年 |
+| AaaS 平台 | 多租户 SaaS 服务 | $50k-500k+/年 |
+| 量化交易 | 预测市场/加密交易 | 看市场 |
+| 电商运营 | 亚马逊/eBay 自动化 | 10x 效率 |
+| 联盟营销 | 内容分发+佣金 | 被动收入 |
 
 ---
 
 *本文档由 AI 整理于 2026-02-28*
-*数据来源: GitHub Issues, GitHub PR, 官方文档, 社区讨论*
+*数据来源: GitHub, 官方文档, 社区讨论*
