@@ -1,0 +1,51 @@
+{
+  "product": {
+    "name": "Your Product",
+    "website": "https://yourproduct.com",
+    "oneLiner": "帮助 [目标用户] 解决 [核心痛点]",
+    "targetUsers": ["用户画像 1", "用户画像 2"],
+    "features": ["功能 1", "功能 2", "功能 3"],
+    "pricing": {
+      "free": "免费版说明",
+      "pro": "$9.99/月"
+    },
+    "cases": [
+      {"user": "用户 A", "result": "效率提升 300%"},
+      {"user": "用户 B", "result": "月收入$5000"}
+    ]
+  },
+  "platforms": {
+    "twitter": {
+      "enabled": false,
+      "username": "your_username",
+      "cookie": "your_twitter_cookie"
+    },
+    "facebook": {
+      "enabled": false,
+      "pageId": "your_page_id",
+      "cookie": "your_facebook_cookie"
+    },
+    "wechat": {
+      "enabled": false,
+      "appId": "your_app_id",
+      "appSecret": "your_app_secret"
+    }
+  },
+  "schedule": {
+    "postTime": "09:00",
+    "timezone": "Asia/Shanghai",
+    "dailyPosts": {
+      "twitter": 3,
+      "facebook": 1,
+      "wechat": 1
+    }
+  },
+  "engagement": {
+    "dailySearches": {
+      "twitter": 10,
+      "facebook": 5,
+      "wechat": 5
+    },
+    "keywords": ["行业关键词 1", "行业关键词 2"]
+  }
+}
