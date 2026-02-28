@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信公众号文章</title>
+    <style>
+        :root {
+            
+  --primary-color: #7c3aed;        /* 主色调：紫色 */
+  --secondary-color: #3b82f6;      /* 辅助色：蓝色 */
+  --text-color: #333333;           /* 正文颜色 */
+  --text-light: #666666;           /* 浅色文字 */
+  --background: #ffffff;           /* 背景色 */
+  --code-bg: #282c34;              /* 代码块背景 */
+  --code-color: #abb2bf;           /* 代码文字 */
+  --quote-border: #7c3aed;         /* 引用边框 */
+  --quote-bg: #f8f5ff;             /* 引用背景 */
+  --border-radius: 8px;            /* 圆角半径 */
+
+        }
+
+        /* 基础样式 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            background: #fff;
+            padding: 20px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- ⚠️ 标题请在微信公众号编辑器中单独填写，HTML 中已自动移除 H1 标题 -->
+    <blockquote style="margin: 20px 0; padding: 16px 20px; background: #f8f5ff; border-left: 4px solid #7c3aed; border-radius: 0 8px 8px 0; color: #666666; font-style: italic">
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">独立开发者的 Product Hunt  Launch 指南</p>
+</blockquote>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h2 style="font-size: 24px; font-weight: 600; color: #1a1a1a; margin: 28px 0 20px 0; padding-bottom: 12px; border-bottom: 2px solid transparent; background-image: linear-gradient(90deg, #7c3aed 0%, #3b82f6 50%, transparent 50%); background-size: 100% 2px; background-position: 0 100%; background-repeat: no-repeat; line-height: 1.4">📌 写在前面</h2>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">Product Hunt 打榜有多难？</p>
+<ul style="margin: 16px 0; padding-left: 28px">
+<li style="margin: 8px 0; line-height: 1.8; list-style-type: none; position: relative">选错日子，算法直接把你埋了</li>
+<li style="margin: 8px 0; line-height: 1.8; list-style-type: none; position: relative">一个不小心，账号被 shadowban</li>
+<li style="margin: 8px 0; line-height: 1.8; list-style-type: none; position: relative">不会写 tagline，转化率低到哭</li>
+<li style="margin: 8px 0; line-height: 1.8; list-style-type: none; position: relative">手动发邮件、回复评论，累到怀疑人生</li>
+</ul>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">今天给你介绍一个神器 —— <strong style="font-weight: 600; color: #1a1a1a">producthunt-skills</strong>，31 个 AI Agent Skills，帮你搞定 PH 打榜全流程！</p>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h2 style="font-size: 24px; font-weight: 600; color: #1a1a1a; margin: 28px 0 20px 0; padding-bottom: 12px; border-bottom: 2px solid transparent; background-image: linear-gradient(90deg, #7c3aed 0%, #3b82f6 50%, transparent 50%); background-size: 100% 2px; background-position: 0 100%; background-repeat: no-repeat; line-height: 1.4">🔥 producthunt-skills 是什么？</h2>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">GitHub：https://github.com/yoanbernabeu/producthunt-skills</p>
+<blockquote style="margin: 20px 0; padding: 16px 20px; background: #f8f5ff; border-left: 4px solid #7c3aed; border-radius: 0 8px 8px 0; color: #666666; font-style: italic">
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">🚀 31 AI Agent Skills for Product Hunt launches. Expert guidance for strategy, content, marketing, compliance &amp; more.</p>
+</blockquote>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word"><strong style="font-weight: 600; color: #1a1a1a">支持的主流 AI Agent：</strong><br/>
+- Claude Code<br/>
+- Cursor<br/>
+- Codex<br/>
+- OpenCode<br/>
+- Windsurf<br/>
+- 等等 30+ AI agents</p>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word"><strong style="font-weight: 600; color: #1a1a1a">安装方式：</strong></p>
+<pre class="codehilite" data-lang="bash" style="background: #282c34; color: #abb2bf; padding: 16px; border-radius: 8px; overflow-x: auto; margin: 20px 0; line-height: 1.6; position: relative"><code class="language-bash" style='background: #f5f5f5; color: #e83e8c; padding: 2px 6px; border-radius: 4px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.9em; font-weight: 500'>npx skills add yoanbernabeu/producthunt-skills
+
+npx skills add yoanbernabeu/producthunt-skills --skill ph-launch-strategy
+</code></pre>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h2 style="font-size: 24px; font-weight: 600; color: #1a1a1a; margin: 28px 0 20px 0; padding-bottom: 12px; border-bottom: 2px solid transparent; background-image: linear-gradient(90deg, #7c3aed 0%, #3b82f6 50%, transparent 50%); background-size: 100% 2px; background-position: 0 100%; background-repeat: no-repeat; line-height: 1.4">📦 31 个 Skills 全面解析</h2>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">一、策略规划 (3个)</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; overflow-x: auto; display: block">
+<thead style="background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%); color: #fff">
+<tr>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">Skill</th>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-launch-strategy</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">定义目标，创建 4-6 周时间线</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-competitor-analysis</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">分析竞品发布，benchmark 顶级玩家</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-timing-optimizer</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">选择最佳发布日子和时间</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">💡 <strong style="font-weight: 600; color: #1a1a1a">使用场景：</strong></p>
+<blockquote style="margin: 20px 0; padding: 16px 20px; background: #f8f5ff; border-left: 4px solid #7c3aed; border-radius: 0 8px 8px 0; color: #666666; font-style: italic">
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">"什么时候发布最适合我的产品？"</p>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">运行 <code style='background: #f5f5f5; color: #e83e8c; padding: 2px 6px; border-radius: 4px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.9em; font-weight: 500'>ph-timing-optimizer</code>，AI 会分析你的目标用户活跃时间、竞争对手发布时间历史，给你最佳建议。</p>
+</blockquote>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">二、内容创作 (6个)</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; overflow-x: auto; display: block">
+<thead style="background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%); color: #fff">
+<tr>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">Skill</th>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-tagline-writer</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">写出 60 字以内的吸引人 tagline</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-description-writer</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">写转化的描述（AIDA/PAS/FAB 框架）</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-maker-comment</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">写出真实的第一条评论</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-thumbnail-creator</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">设计抓眼球的缩略图和 GIF</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-gallery-assets</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">构建吸引人的图片画廊</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-video-demo</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">脚本和结构化演示视频（30-60秒）</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">💡 <strong style="font-weight: 600; color: #1a1a1a">使用场景：</strong></p>
+<blockquote style="margin: 20px 0; padding: 16px 20px; background: #f8f5ff; border-left: 4px solid #7c3aed; border-radius: 0 8px 8px 0; color: #666666; font-style: italic">
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">"我的 tagline 太烂了，求优化！"</p>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">运行 <code style='background: #f5f5f5; color: #e83e8c; padding: 2px 6px; border-radius: 4px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.9em; font-weight: 500'>ph-tagline-writer</code>，AI 会结合你的产品特点，写出多个 tagline 备选。</p>
+</blockquote>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">三、营销推广 (4个)</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; overflow-x: auto; display: block">
+<thead style="background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%); color: #fff">
+<tr>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">Skill</th>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-email-strategy</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">规划跨时区的邮件波次</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-social-media-launch</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">协调 Twitter/LinkedIn/Facebook</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-community-outreach</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">Reddit、Indie Hackers、HN 互动</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-supporter-network</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">建立和激活你的支持者网络</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">💡 <strong style="font-weight: 600; color: #1a1a1a">真实案例：</strong></p>
+<blockquote style="margin: 20px 0; padding: 16px 20px; background: #f8f5ff; border-left: 4px solid #7c3aed; border-radius: 0 8px 8px 0; color: #666666; font-style: italic">
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">"我想在 Reddit r/indiehackers 宣传，但怕被删帖"</p>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">运行 <code style='background: #f5f5f5; color: #e83e8c; padding: 2px 6px; border-radius: 4px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.9em; font-weight: 500'>ph-community-outreach</code>，AI 会告诉你：<br/>
+- 哪些子版块适合<br/>
+- 怎么写不违规<br/>
+- 最佳发布时间</p>
+</blockquote>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">四、发布日执行 (3个)</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; overflow-x: auto; display: block">
+<thead style="background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%); color: #fff">
+<tr>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">Skill</th>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-launch-day-checklist</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">每小时执行计划</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-comment-responder</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">快速回复评论（&lt;9分钟）</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-real-time-monitor</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">实时追踪和调整</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">💡 <strong style="font-weight: 600; color: #1a1a1a">发布日 Checklist：</strong></p>
+<pre class="codehilite" style="background: #282c34; color: #abb2bf; padding: 16px; border-radius: 8px; overflow-x: auto; margin: 20px 0; line-height: 1.6; position: relative"><code style='background: #f5f5f5; color: #e83e8c; padding: 2px 6px; border-radius: 4px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.9em; font-weight: 500'>🕐 12:01 AM PST - 准时发布
+🕐 前 4 小时 - 关键期，全力互动
+🕐 每隔 1 小时 - 检查排名，调整策略
+🕐 24 小时内 - 回复每一条评论
+</code></pre>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">五、合规避坑 (3个)</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; overflow-x: auto; display: block">
+<thead style="background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%); color: #fff">
+<tr>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">Skill</th>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-ban-prevention</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">避免 shadowban 和处罚</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-algorithm-guide</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">理解排名因素</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-safe-messaging</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">使用批准的语言模式</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">⚠️ <strong style="font-weight: 600; color: #1a1a1a">重要规则（必看）：</strong><br/>
+- ❌ 永远不要直接要 upvotes<br/>
+- ✅ 改成要 "support" 或 "feedback"<br/>
+- ❌ 违规 = 被 ban</p>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">六、猎人合作 (2个)</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; overflow-x: auto; display: block">
+<thead style="background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%); color: #fff">
+<tr>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">Skill</th>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-hunter-finder</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">找到并联系顶级猎人</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-profile-optimizer</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">打造 maker 声誉</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">💡 <strong style="font-weight: 600; color: #1a1a1a">为什么重要？</strong><br/>
+- 好猎人 = 更多曝光<br/>
+- 顶级猎人单日带来 1000+ votes</p>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">七、定价策略 (2个)</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; overflow-x: auto; display: block">
+<thead style="background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%); color: #fff">
+<tr>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">Skill</th>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-launch-offers</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">创建 PH 专属优惠</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-pricing-psychology</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">利用 FOMO 和紧迫感</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">💡 <strong style="font-weight: 600; color: #1a1a1a">定价心理学：</strong><br/>
+- 限时优惠创造紧迫感<br/>
+- PH 专属折扣吸引行动</p>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">八、数据分析 (2个)</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; overflow-x: auto; display: block">
+<thead style="background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%); color: #fff">
+<tr>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">Skill</th>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-analytics-setup</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">配置追踪工具</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-conversion-tracking</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">衡量发布效果和 ROI</td>
+</tr>
+</tbody>
+</table>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">九、发布后运营 (4个)</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; overflow-x: auto; display: block">
+<thead style="background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%); color: #fff">
+<tr>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">Skill</th>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-post-launch-followup</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">感谢支持者，收集评价</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-content-recycling</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">复用发布素材</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-relaunch-strategy</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">规划下次发布（v2.0）</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-seo-benefits</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">最大化 PH 反向链接 SEO 价值</td>
+</tr>
+</tbody>
+</table>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">十、奖项策略 (2个)</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; overflow-x: auto; display: block">
+<thead style="background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%); color: #fff">
+<tr>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">Skill</th>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-newsletter-pitch</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">投稿到 PH 周报</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6"><strong style="font-weight: 600; color: #1a1a1a">ph-golden-kitty</strong></td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">Golden Kitty 奖项策略</td>
+</tr>
+</tbody>
+</table>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h2 style="font-size: 24px; font-weight: 600; color: #1a1a1a; margin: 28px 0 20px 0; padding-bottom: 12px; border-bottom: 2px solid transparent; background-image: linear-gradient(90deg, #7c3aed 0%, #3b82f6 50%, transparent 50%); background-size: 100% 2px; background-position: 0 100%; background-repeat: no-repeat; line-height: 1.4">🚀 怎么使用？</h2>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">方式一：命令行安装</h3>
+<pre class="codehilite" data-lang="bash" style="background: #282c34; color: #abb2bf; padding: 16px; border-radius: 8px; overflow-x: auto; margin: 20px 0; line-height: 1.6; position: relative"><code class="language-bash" style='background: #f5f5f5; color: #e83e8c; padding: 2px 6px; border-radius: 4px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.9em; font-weight: 500'>npx skills add yoanbernabeu/producthunt-skills
+
+npx skills add yoanbernabeu/producthunt-skills --list
+</code></pre>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">方式二：直接问 AI</h3>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">安装完成后，直接对你的 AI Agent 说：</p>
+<pre class="codehilite" style="background: #282c34; color: #abb2bf; padding: 16px; border-radius: 8px; overflow-x: auto; margin: 20px 0; line-height: 1.6; position: relative"><code style='background: #f5f5f5; color: #e83e8c; padding: 2px 6px; border-radius: 4px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.9em; font-weight: 500'>"Help me plan my Product Hunt launch"
+
+"Write a tagline for my SaaS product"
+
+"Create a launch day checklist"
+
+"Check if my email is PH-compliant"
+
+"When is the best day to launch?"
+</code></pre>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h2 style="font-size: 24px; font-weight: 600; color: #1a1a1a; margin: 28px 0 20px 0; padding-bottom: 12px; border-bottom: 2px solid transparent; background-image: linear-gradient(90deg, #7c3aed 0%, #3b82f6 50%, transparent 50%); background-size: 100% 2px; background-position: 0 100%; background-repeat: no-repeat; line-height: 1.4">💎 结合 OpenClaw/Clawbolt</h2>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">虽然这些 Skills 主要面向 Claude Code/Cursor 等 AI 工具，但我们可以用 OpenClaw 实现类似功能！</p>
+<h3 style="font-size: 20px; font-weight: 600; color: #1a1a1a; margin: 24px 0 16px 0; padding-left: 12px; border-left: 3px solid #7c3aed; line-height: 1.4">可以自动化的部分：</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; overflow-x: auto; display: block">
+<thead style="background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%); color: #fff">
+<tr>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">功能</th>
+<th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #dee2e6">实现方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">定时抓取竞品数据</td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">Clawbolt 浏览器自动化</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">自动发布社交媒体</td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">OpenClaw 多渠道集成</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">评论监控和回复</td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">AI Agent + 自动化</td>
+</tr>
+<tr>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">数据追踪和报告</td>
+<td style="padding: 12px 16px; border: 1px solid #dee2e6">定时任务 + 分析</td>
+</tr>
+</tbody>
+</table>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h2 style="font-size: 24px; font-weight: 600; color: #1a1a1a; margin: 28px 0 20px 0; padding-bottom: 12px; border-bottom: 2px solid transparent; background-image: linear-gradient(90deg, #7c3aed 0%, #3b82f6 50%, transparent 50%); background-size: 100% 2px; background-position: 0 100%; background-repeat: no-repeat; line-height: 1.4">📊 总结</h2>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word"><strong style="font-weight: 600; color: #1a1a1a">producthunt-skills 适合谁？</strong></p>
+<ul style="margin: 16px 0; padding-left: 28px">
+<li style="margin: 8px 0; line-height: 1.8; list-style-type: none; position: relative">✅ 第一次上 PH 的小白</li>
+<li style="margin: 8px 0; line-height: 1.8; list-style-type: none; position: relative">✅ 想系统化打榜的老手</li>
+<li style="margin: 8px 0; line-height: 1.8; list-style-type: none; position: relative">✅ 没有团队的独立开发者</li>
+<li style="margin: 8px 0; line-height: 1.8; list-style-type: none; position: relative">✅ 时间有限的 maker</li>
+</ul>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word"><strong style="font-weight: 600; color: #1a1a1a">核心价值：</strong><br/>
+- 31 个 Skills 覆盖打榜全流程<br/>
+- 不需要再踩坑<br/>
+- AI 帮你做决策</p>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word"><strong style="font-weight: 600; color: #1a1a1a">免费使用，GitHub 4.3k+ stars</strong></p>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<h2 style="font-size: 24px; font-weight: 600; color: #1a1a1a; margin: 28px 0 20px 0; padding-bottom: 12px; border-bottom: 2px solid transparent; background-image: linear-gradient(90deg, #7c3aed 0%, #3b82f6 50%, transparent 50%); background-size: 100% 2px; background-position: 0 100%; background-repeat: no-repeat; line-height: 1.4">📎 相关资源</h2>
+<ul style="margin: 16px 0; padding-left: 28px">
+<li style="margin: 8px 0; line-height: 1.8; list-style-type: none; position: relative">GitHub：https://github.com/yoanbernabeu/producthunt-skills</li>
+<li style="margin: 8px 0; line-height: 1.8; list-style-type: none; position: relative">PH Launch Guide：https://www.producthunt.com/launch</li>
+<li style="margin: 8px 0; line-height: 1.8; list-style-type: none; position: relative">PH Help Center：https://help.producthunt.com</li>
+</ul>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word"><strong style="font-weight: 600; color: #1a1a1a">祝你的产品 PH 打榜成功！🚀</strong></p>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word">如果觉得有帮助，欢迎转发分享！</p>
+<hr style="border: none; height: 2px; background: linear-gradient(90deg, transparent 0%, #7c3aed 50%, transparent 100%); margin: 32px 0"/>
+<p style="margin: 18px 0; text-align: justify; word-break: break-word"><em style="font-style: italic; color: #333333">本文首发于 [公众号：xxx]</em><br/>
+<em style="font-style: italic; color: #333333">参考来源：producthunt-skills GitHub</em></p>
+</body>
+</html>
